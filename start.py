@@ -8,7 +8,7 @@ def hello_world():
 
 @app.route('/')  #127.0.0.1/css/b.css
 def index():
-    return send_from_directory('html', 'index.html') #127.0.0.1/html/css/b.css
+    return send_from_directory('html', 'index.html') #127.0.0.1/index.html
 
 @app.route('/<path:name>')  
 def start(name):
